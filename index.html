@@ -490,7 +490,8 @@
           <div class="container-fluid">
             <div class="footer-minimal-inset oh">
               <ul class="footer-list-category-2">
-                <li><audio controls autoplay><source src="Ikson-Paradise.mp3" type="audio/mpeg"></audio></li>
+<!--                 <li><audio controls autoplay><source src="Ikson-Paradise.mp3" type="audio/mpeg"></audio></li> -->
+                <li><audio src="Ikson-Paradise.mp3" autoplay="auto" /></li>
               </ul>
             </div>
             <div class="footer-minimal-bottom-panel text-sm-left">
@@ -521,5 +522,11 @@
     <!-- Javascript-->
     <script type="text/javascript" src="js/core.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/audio.min.js"></script>
+    <script>
+   audiojs.events.ready(function() {
+     var as = audiojs.createAll();
+   });
+ </script>
   </body>
 </html>
